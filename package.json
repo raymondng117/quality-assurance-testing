@@ -1,0 +1,27 @@
+{
+  "name": "localapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "local-api-server.js",
+  "scripts": {
+    "todo-mocha-test": "mocha test/ToDoApp/rest-api-automation.js",
+    "start-server": "node service/rest-api-server.js",
+    "todo-selenium-test": "node test/ToDoApp/seleniumTest.js",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.44.1",
+    "axios": "^1.7.2",
+    "chai": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.3",
+    "playwright": "^1.44.1",
+    "selenium-webdriver": "^4.21.0"
+  }
+}
