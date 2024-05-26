@@ -1,3 +1,4 @@
+// run node .\web-selenium-test.js in the exact folder
 const { Builder, By, until, Key } = require('selenium-webdriver');
 
 BASE_URL = 'https://raymondng117.github.io/react-todo-app-static/#/'
@@ -15,13 +16,13 @@ async function runSeleniumTest() {
         await driver.get(BASE_URL);
 
         // Sign up
-        await driver.findElement(By.id('signUpLink')).click();
-        await driver.findElement(By.id('username')).sendKeys('testuser4');
-        await driver.findElement(By.id('useremail')).sendKeys('testuser4@example.com');
-        await driver.findElement(By.id('password')).sendKeys('password123');
-        await driver.findElement(By.id('signupBtn')).click();
+        // await driver.findElement(By.id('signUpLink')).click();
+        // await driver.findElement(By.id('username')).sendKeys('testuser4');
+        // await driver.findElement(By.id('useremail')).sendKeys('testuser4@example.com');
+        // await driver.findElement(By.id('password')).sendKeys('password123');
+        // await driver.findElement(By.id('signupBtn')).click();
         // Wait for redirection to the sign-in page
-        await driver.wait(until.urlIs(BASE_URL), 10000); 
+        // await driver.wait(until.urlIs(BASE_URL), 10000); 
 
         // Sign in
         await driver.findElement(By.id('useremail')).sendKeys('testuser4@example.com');
